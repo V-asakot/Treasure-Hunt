@@ -272,6 +272,9 @@
  <Reference Include="UnityEngine.XRModule">
  <HintPath>E:/Программы/Editors/2019.2.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
+ <Reference Include="UnityTemplates">
+ <HintPath>E:/Programming/CSharp/Projects/Unity3D/Treasure Hunt/Assets/Scripts/UnityTemplates.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>E:/Программы/Editors/2019.2.9f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>

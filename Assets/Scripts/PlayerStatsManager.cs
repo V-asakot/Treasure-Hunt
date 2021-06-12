@@ -9,8 +9,9 @@ public class PlayerStatsManager : Singleton<PlayerStatsManager>
 {
 
    
-   
     private PlayerStats _stats;
+    [SerializeField]
+    private bool _isLoaded = false;
 
     public PlayerStats Stats { set {_stats = value;SaveStats(); } get {if(_stats == null) LoadStats();return _stats; } }
 
@@ -35,6 +36,7 @@ public class PlayerStatsManager : Singleton<PlayerStatsManager>
             FileStream file = File.Open(f, FileMode.Open);
             _stats= (PlayerStats)bf.Deserialize(file);
             file.Close();
+            _isLoaded = true;
         }
         catch (IOException ex)
         {
@@ -67,6 +69,8 @@ public class PlayerStatsManager : Singleton<PlayerStatsManager>
 
 
     }
+
+    
 
  
 }
